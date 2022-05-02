@@ -29,3 +29,40 @@ void printfList(SeqList L) {
     }
 }
 
+bool insertList(SeqList &L, int i, int e) {
+    if (i < 1 || i > L.length + 1) {
+        return false;
+    }
+    if (L.length >= MAX_SIZE) {
+        return false;
+    }
+
+    for (int j = L.length; j >= i; j--) {
+        L.data[j] = L.data[j - 1];
+    }
+
+    L.data[i - 1] = e;
+    L.length++;
+    return true;
+}
+
+bool deleteList(SeqList &L, int i) {
+    if (i < 1 || i > L.length) {
+        return false;
+    }
+
+    for (int j = i; j < L.length; j++) {
+        L.data[j - 1] = L.data[j];
+    }
+    L.length--;
+    return true;
+}
+
+int locateElem(SeqList L, int e) {
+    for (int i = 0; i < L.length; i++) {
+        if (L.data[i] == e) {
+            return i + 1;
+        }
+    }
+    return -1;
+}
