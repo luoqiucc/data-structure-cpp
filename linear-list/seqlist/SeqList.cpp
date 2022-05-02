@@ -29,7 +29,7 @@ void printfList(SeqList L) {
     }
 }
 
-bool insertList(SeqList &L, int i, int e) {
+bool listInsert(SeqList &L, int i, int e) {
     if (i < 1 || i > L.length + 1) {
         return false;
     }
@@ -46,7 +46,7 @@ bool insertList(SeqList &L, int i, int e) {
     return true;
 }
 
-bool deleteList(SeqList &L, int i) {
+bool listDelete(SeqList &L, int i) {
     if (i < 1 || i > L.length) {
         return false;
     }
@@ -54,6 +54,7 @@ bool deleteList(SeqList &L, int i) {
     for (int j = i; j < L.length; j++) {
         L.data[j - 1] = L.data[j];
     }
+
     L.length--;
     return true;
 }
@@ -65,4 +66,8 @@ int locateElem(SeqList L, int e) {
         }
     }
     return -1;
+}
+
+void destroy(SeqList *L){
+    free(L);
 }

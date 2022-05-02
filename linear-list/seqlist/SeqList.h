@@ -5,6 +5,10 @@
 
 #define MAX_SIZE 20
 
+/*
+ * 顺序表结构
+ * @helwor
+ */
 typedef struct {
     int data[MAX_SIZE];
     int length;
@@ -33,16 +37,22 @@ void printfList(SeqList L);
  * 在指定位置插入值
  * @helwor
  */
-bool insertList(SeqList &L, int i, int e);
+bool listInsert(SeqList &L, int i, int e);
 
 /*
  * 按位序删除一个元素
  * @helwor
  */
-bool deleteList(SeqList &L, int i);
+bool listDelete(SeqList &L, int i);
 
 /*
  * 按值查找
  * @helwor
  */
 int locateElem(SeqList L, int e);
+
+/*
+ * 销毁顺序表
+ * @helwor
+ */
+void destroy(SeqList *L);
