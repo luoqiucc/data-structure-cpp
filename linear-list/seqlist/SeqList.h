@@ -22,10 +22,10 @@ void init(SeqList &L);
 
 /*
  * 使用指定的值填充这个顺序表
- * 啊~~ 被灌满了
+ * 啊~~ 被灌的满满的了
  * @helwor
  */
-bool fullList(SeqList &L, int value, int Length);
+bool fullList(SeqList &L, int value, int length);
 
 /*
  * 打印顺序表的全部元素
