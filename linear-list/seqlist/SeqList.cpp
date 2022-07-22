@@ -1,6 +1,6 @@
-//
-// Created by 29928 on 2022/5/1.
-//
+/*
+ * Created by chokeberry on 2022/5/1.
+ */
 #include "SeqList.h"
 
 void init(SeqList &L) {
