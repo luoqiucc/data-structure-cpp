@@ -1,9 +1,9 @@
 /*
  * Created by chokeberry on 2022/5/2.
  */
-#include "SinglyLinkList.h"
+#include "SinglyLinkedList.h"
 
-bool init(LinkList &L) {
+bool init(LinkedList &L) {
     L = (LNode *) malloc(sizeof(LNode));
     if (L == nullptr) {
         return false;
@@ -12,15 +12,47 @@ bool init(LinkList &L) {
     return true;
 }
 
-void printfList(LinkList &L) {
+void fullList(LinkedList &L) {
+    for (int i = 0; i < 5; i++) {
+        listInsert(L, 1, i);
+    }
+}
+
+void printfList(LinkedList L) {
     // 这里将头节点直接忽略
     while (L->next != nullptr) {
         L = L->next;
         printf(">%d ", L->data);
     }
+    printf("\n");
 }
 
-bool listInsert(LinkList &L, int i, int e) {
+LNode *getElem(LinkedList L, int i) {
+    if (i < 0) {
+        return nullptr;
+    }
+
+    LNode *p;
+    int j = 0;
+    p = L;
+    while (p != nullptr && j < i) {
+        p = p->next;
+        j++;
+    }
+
+    return p;
+}
+
+LNode *getElemByValue(LinkedList L, int e) {
+    LNode *p = L->next;
+    while (p != nullptr && p->data != e) {
+        p = p->next;
+    }
+
+    return p;
+}
+
+bool listInsert(LinkedList &L, int i, int e) {
     if (i < 1) {
         return false;
     }
@@ -37,6 +69,9 @@ bool listInsert(LinkList &L, int i, int e) {
     }
 
     auto *s = (LNode *) malloc(sizeof(LNode));
+    if (s == nullptr) {
+        return false;
+    }
     s->data = e;
     s->next = p->next;
     p->next = s;
@@ -79,14 +114,45 @@ bool insertPriorNode(LNode *p, int e) {
     return true;
 }
 
-bool listDelete(LinkList &L, int i, int &e) {
+bool listDelete(LinkedList &L, int i, int &e) {
+    if (i < 1) {
+        return false;
+    }
 
+    LNode *p;
+    int j = 0;
+    p = L;
+    while (p != nullptr && j < i - 1) {
+        p = p->next;
+        j++;
+    }
+
+    if (p == nullptr) {
+        return false;
+    }
+    if (p->next == nullptr) {
+        return false;
+    }
+
+    LNode *q = p->next;
+    e = q->data;
+    p->next = q->next;
+    free(q);
+    return true;
 }
 
 bool deleteNode(LNode *p) {
+    if (p == nullptr) {
+        return false;
+    }
 
+    LNode *q = p->next;
+    p->data = p->next->data;
+    p->next = q->next;
+    free(q);
+    return true;
 }
 
 bool deleteNodePlus(LNode *p) {
-
+    return true;
 }

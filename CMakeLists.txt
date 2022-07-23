@@ -8,5 +8,5 @@ add_executable(
         main.cpp
         linear-list/seqlist/SeqList.h
         linear-list/seqlist/SeqList.cpp
-        linear-list/singly-link-list/SinglyLinkList.h
-        linear-list/singly-link-list/SinglyLinkList.cpp)
+        linear-list/linked-list/singly-linked-list/SinglyLinkedList.h
+        linear-list/linked-list/singly-linked-list/SinglyLinkedList.cpp linear-list/linked-list/doubly-linked-list/DoublyLinkedList.h linear-list/linked-list/doubly-linked-list/DoublyLinkedList.h linear-list/linked-list/doubly-linked-list/DoublyLinkedList.cpp)

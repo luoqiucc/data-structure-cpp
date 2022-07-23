@@ -8,7 +8,7 @@
 /*
  * 单链表
  */
-#include "linear-list/singly-link-list/SinglyLinkList.h"
+#include "linear-list/linked-list/singly-linked-list/SinglyLinkedList.h"
 
 int main() {
     // 顺序表
@@ -26,12 +26,24 @@ int main() {
 //    return 0;
 
     // 单链表
-    LinkList L;
+    LinkedList L;
     init(L);
+    fullList(L);
+    printfList(L);
 
-    for (int i = 0; i < 5; i++) {
-        listInsert(L, 1, i);
-    }
+    insertNextNode(L->next, 99);
+
+    insertPriorNode(L->next, 98);
 
     printfList(L);
+    int e = 0;
+    listDelete(L, 4, e);
+    printf("delete: %d \n", e);
+
+    printfList(L);
+
+    LNode *p = getElem(L, 3);
+    LNode *p2 = getElemByValue(L, 85);
+    printf("%d", p->data);
+    printf("value: %s", p2);
 }

@@ -8,25 +8,40 @@
 /*
  * 单链表结构
  */
-typedef struct LNode{
+typedef struct LNode {
     int data;
     struct LNode *next;
-}LNode, *LinkList;
+} LNode, *LinkedList;
 
 /*
  * 初始化一个单链表
  */
-bool init(LinkList &L);
+bool init(LinkedList &L);
+
+/*
+ * 给这个表填充一些值
+ */
+void fullList(LinkedList &L);
 
 /*
  * 遍历链表,打印链表的所有内容
  */
-void printfList(LinkList &L);
+void printfList(LinkedList L);
+
+/*
+ * 按位查找
+ */
+LNode *getElem(LinkedList L, int i);
+
+/*
+ * 按值查找
+ */
+LNode *getElemByValue(LinkedList L, int e);
 
 /*
  * 在第i个位置插入元素e
  */
-bool listInsert(LinkList &L, int i, int e);
+bool listInsert(LinkedList &L, int i, int e);
 
 /*
  * 在p节点之后插入一个新节点
@@ -41,7 +56,7 @@ bool insertPriorNode(LNode *p, int e);
 /*
  * 删除第i个位置的元素
  */
-bool listDelete(LinkList &L, int i, int &e);
+bool listDelete(LinkedList &L, int i, int &e);
 
 /*
  * 删除指定节点p
