@@ -13,7 +13,17 @@
 /*
  * 双链表
  */
-#include "linear-list/linked-list/doubly-linked-list/DoublyLinkedList.h"
+//#include "linear-list/linked-list/doubly-linked-list/DoublyLinkedList.h"
+
+/*
+ * 循环链表
+ */
+//#include "linear-list/linked-list/circular-linked-list/CircularLinkedList.h"
+
+/*
+ * 静态链表
+ */
+#include "linear-list/linked-list/static-linked-list/StaticLinkedList.h"
 
 int main() {
     // 顺序表
@@ -58,4 +68,10 @@ int main() {
 //    bool result = isEmpty(L);
 //    std::cout << result << std::endl;
 //    printfList(L);
+
+    // 静态链表
+    SLinkedList L;
+//    std::cout << sizeof(L) << std::endl;
+    init(L);
+    printfEmptyNode(L);
 }
