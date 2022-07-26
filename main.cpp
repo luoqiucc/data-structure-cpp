@@ -3,27 +3,32 @@
 /*
  * 顺序表
  */
-//#include "linear-list/seqlist/SeqList.h"
+//#include "./linear-list/seqlist/SeqList.h"
 
 /*
  * 单链表
  */
-//#include "linear-list/linked-list/singly-linked-list/SinglyLinkedList.h"
+//#include "./linear-list/linked-list/singly-linked-list/SinglyLinkedList.h"
 
 /*
  * 双链表
  */
-//#include "linear-list/linked-list/doubly-linked-list/DoublyLinkedList.h"
+//#include "./linear-list/linked-list/doubly-linked-list/DoublyLinkedList.h"
 
 /*
  * 循环链表
  */
-//#include "linear-list/linked-list/circular-linked-list/CircularLinkedList.h"
+//#include "./linear-list/linked-list/circular-linked-list/CircularLinkedList.h"
 
 /*
  * 静态链表
  */
-#include "linear-list/linked-list/static-linked-list/StaticLinkedList.h"
+//#include "./linear-list/linked-list/static-linked-list/StaticLinkedList.h"
+
+/*
+ * 顺序栈
+ */
+#include "./stack/seqstack/SeqStack.h"
 
 int main() {
     // 顺序表
@@ -70,8 +75,26 @@ int main() {
 //    printfList(L);
 
     // 静态链表
-    SLinkedList L;
+//    SLinkedList L;
 //    std::cout << sizeof(L) << std::endl;
-    init(L);
-    printfEmptyNode(L);
+//    init(L);
+//    printfEmptyNode(L);
+
+    // 顺序栈
+    int x=-1;
+    SeqStack S;
+    fullStack(S, 5);
+
+    push(S, 23);
+
+    printfStack(S);
+    x = getTop(S);
+    printf("top: %d\n", x);
+
+    pop(S, x);
+    printf("x: %d", x);
+    printfStack(S);
+
+    x = getTop(S);
+    printf("top: %d", x);
 }

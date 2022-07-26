@@ -23,3 +23,8 @@ void printfEmptyNode(SLinkedList L) {
         }
     }
 }
+
+// 待补充
+void fullList(SLinkedList &L){
+
+}

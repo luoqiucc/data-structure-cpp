@@ -20,3 +20,9 @@ bool init(SLinkedList &L);
  * 打印所有空节点
  */
 void printfEmptyNode(SLinkedList L);
+
+/*
+ * 填充这个链表
+ * 待补充
+ */
+void fullList(SLinkedList &L);
