@@ -66,5 +66,6 @@ bool deleteNode(LNode *p);
 /*
  * 删除指定节点p
  * 这是一个增强版本，解决p是最后一个节点的问题
+ * 待完成
  */
 bool deleteNodePlus(LNode *p);

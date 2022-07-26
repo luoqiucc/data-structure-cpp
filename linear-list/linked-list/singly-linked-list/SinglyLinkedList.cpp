@@ -155,6 +155,7 @@ bool deleteNode(LNode *p) {
     return true;
 }
 
+// 待完成
 bool deleteNodePlus(LNode *p) {
     return true;
 }

@@ -18,4 +18,4 @@ add_executable(
         linear-list/linked-list/static-linked-list/StaticLinkedList.h
         stack/seqstack/SeqStack.cpp
         stack/seqstack/SeqStack.h
-)
+        stack/linked-stack/LinkedStack.cpp stack/linked-stack/LinkedStack.h)

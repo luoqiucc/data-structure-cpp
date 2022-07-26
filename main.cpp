@@ -28,7 +28,12 @@
 /*
  * 顺序栈
  */
-#include "./stack/seqstack/SeqStack.h"
+//#include "./stack/seqstack/SeqStack.h"
+
+/*
+ * 链栈
+ */
+#include "./stack/linked-stack/LinkedStack.h"
 
 int main() {
     // 顺序表
@@ -81,20 +86,38 @@ int main() {
 //    printfEmptyNode(L);
 
     // 顺序栈
-    int x=-1;
-    SeqStack S;
-    fullStack(S, 5);
+//    int x=-1;
+//    SeqStack S;
+//    fullStack(S, 5);
+//
+//    push(S, 23);
+//
+//    printfStack(S);
+//    x = getTop(S);
+//    printf("top: %d\n", x);
+//
+//    pop(S, x);
+//    printf("x: %d", x);
+//    printfStack(S);
+//
+//    x = getTop(S);
+//    printf("top: %d", x);
 
-    push(S, 23);
-
+    // 链栈
+    int x = 0;
+    LinkedStack S;
+    init(S);
     printfStack(S);
-    x = getTop(S);
-    printf("top: %d\n", x);
+    push(S, 3);
+    push(S, 56);
+    push(S, 514);
+    push(S, 114);
+    printfStack(S);
 
     pop(S, x);
-    printf("x: %d", x);
-    printfStack(S);
+    printf("pop: %d\n", x);
+    pop(S, x);
+    printf("pop: %d\n", x);
 
-    x = getTop(S);
-    printf("top: %d", x);
+    printfStack(S);
 }
