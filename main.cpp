@@ -3,37 +3,42 @@
 /*
  * 顺序表
  */
-//#include "./linear-list/seqlist/SeqList.h"
+//#include "linear-list/seqlist/SeqList.h"
 
 /*
  * 单链表
  */
-//#include "./linear-list/linked-list/singly-linked-list/SinglyLinkedList.h"
+//#include "linear-list/linked-list/singly-linked-list/SinglyLinkedList.h"
 
 /*
  * 双链表
  */
-//#include "./linear-list/linked-list/doubly-linked-list/DoublyLinkedList.h"
+//#include "linear-list/linked-list/doubly-linked-list/DoublyLinkedList.h"
 
 /*
  * 循环链表
  */
-//#include "./linear-list/linked-list/circular-linked-list/CircularLinkedList.h"
+//#include "linear-list/linked-list/circular-linked-list/CircularLinkedList.h"
 
 /*
  * 静态链表
  */
-//#include "./linear-list/linked-list/static-linked-list/StaticLinkedList.h"
+//#include "linear-list/linked-list/static-linked-list/StaticLinkedList.h"
 
 /*
  * 顺序栈
  */
-//#include "./stack/seqstack/SeqStack.h"
+//#include "stack/seqstack/SeqStack.h"
 
 /*
  * 链栈
  */
-#include "./stack/linked-stack/LinkedStack.h"
+//#include "stack/linked-stack/LinkedStack.h"
+
+/*
+ * 循环队列
+ */
+#include "queue/circular-queue/CircularQueue.h"
 
 int main() {
     // 顺序表
@@ -104,20 +109,39 @@ int main() {
 //    printf("top: %d", x);
 
     // 链栈
-    int x = 0;
-    LinkedStack S;
-    init(S);
-    printfStack(S);
-    push(S, 3);
-    push(S, 56);
-    push(S, 514);
-    push(S, 114);
-    printfStack(S);
-
-    pop(S, x);
-    printf("pop: %d\n", x);
-    pop(S, x);
-    printf("pop: %d\n", x);
-
-    printfStack(S);
+//    int x = 0;
+//    LinkedStack S;
+//    init(S);
+//    printfStack(S);
+//    push(S, 3);
+//    push(S, 56);
+//    push(S, 514);
+//    push(S, 114);
+//    printfStack(S);
+//
+//    pop(S, x);
+//    printf("pop: %d\n", x);
+//    pop(S, x);
+//    printf("pop: %d\n", x);
+//
+//    printfStack(S);
+    // 循环队列
+//    int x=0;
+//    CQueue Q;
+//    init(Q);
+//    printfQueue(Q);
+//    inputQueue(Q, 2);
+//    inputQueue(Q, 5);
+//    inputQueue(Q, 9);
+//    inputQueue(Q, 5);
+//    inputQueue(Q, 9);
+//
+//    printfQueue(Q);
+//    outputQueue(Q, x);
+//    outputQueue(Q, x);
+//    outputQueue(Q, x);
+//    printfQueue(Q);
+//    int y = -1;
+//    getHead(Q, y);
+//    printf("top: %d", y);
 }
