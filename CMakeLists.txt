@@ -22,4 +22,6 @@ add_executable(
         stack/linked-stack/LinkedStack.h
         queue/circular-queue/CircularQueue.cpp
         queue/circular-queue/CircularQueue.h
+        queue/linked-queue/LinkedQueue.cpp
+        queue/linked-queue/LinkedQueue.h
 )

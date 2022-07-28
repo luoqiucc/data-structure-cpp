@@ -38,7 +38,13 @@
 /*
  * 循环队列
  */
-#include "queue/circular-queue/CircularQueue.h"
+//#include "queue/circular-queue/CircularQueue.h"
+
+/*
+ * 链式队列
+ */
+#include "queue/linked-queue/LinkedQueue.h"
+
 
 int main() {
     // 顺序表
@@ -125,6 +131,7 @@ int main() {
 //    printf("pop: %d\n", x);
 //
 //    printfStack(S);
+
     // 循环队列
 //    int x=0;
 //    CQueue Q;
@@ -144,4 +151,22 @@ int main() {
 //    int y = -1;
 //    getHead(Q, y);
 //    printf("top: %d", y);
+
+    // 链式队列
+//    int x = -1;
+//    LQueue Q;
+//    init(Q);
+//    printfQueue(Q);
+//    inputQueue(Q, 514);
+//    inputQueue(Q, 114);
+//    inputQueue(Q, 56);
+//    inputQueue(Q, 14);
+//    printfQueue(Q);
+//    x = getHead(Q);
+//    printf("head: %d", x);
+//    outputQueue(Q, x);
+//    outputQueue(Q, x);
+//    printfQueue(Q);
+//    x = getHead(Q);
+//    printf("head: %d", x);
 }
