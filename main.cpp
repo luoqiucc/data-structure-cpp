@@ -1,4 +1,11 @@
 #include <iostream>
+#include "utils/Utils.h"
+
+/*
+ * [instance]
+ * 括号匹配
+ */
+#include "instance/brackets-check/BracketsCheck.h"
 
 /*
  * 顺序表
@@ -43,130 +50,44 @@
 /*
  * 链式队列
  */
-#include "queue/linked-queue/LinkedQueue.h"
-
+//#include "queue/linked-queue/LinkedQueue.h"
 
 int main() {
+    // 括号匹配
+    char brackets[4] = "()(";
+    formatBool(check(brackets, sizeof(brackets) - 1));
+    return 0;
+
     // 顺序表
 //    SeqList L;
 //    init(L);
-//    fullList(L, 2, 10);
-//    listInsert(L, 1, 5);
-//    listInsert(L, 2, 3)；
-//    listDelete(L, 2);
-//    printfList(L);
-//    int i = locateElem(L, 5);
-//    printf("\nlength: %d", L.length);
-//    printf("\nlocate: %d", i);
-//    destroy(&L);
-//    return 0;
 
     // 单链表
 //    LinkedList L;
 //    init(L);
-//    fullList(L);
-//    printfList(L);
-//
-//    insertNextNode(L->next, 99);
-//
-//    insertPriorNode(L->next, 98);
-//
-//    printfList(L);
-//    int e = 0;
-//    listDelete(L, 4, e);
-//    printf("delete: %d \n", e);
-//
-//    printfList(L);
-//
-//    LNode *p = getElem(L, 3);
-//    LNode *p2 = getElemByValue(L, 85);
-//    printf("%d", p->data);
-//    printf("value: %s", p2);
 
     //双链表
 //    DLinkedList L;
 //    init(L);
-//    bool result = isEmpty(L);
-//    std::cout << result << std::endl;
-//    printfList(L);
 
     // 静态链表
 //    SLinkedList L;
-//    std::cout << sizeof(L) << std::endl;
 //    init(L);
-//    printfEmptyNode(L);
 
     // 顺序栈
-//    int x=-1;
 //    SeqStack S;
 //    fullStack(S, 5);
-//
-//    push(S, 23);
-//
-//    printfStack(S);
-//    x = getTop(S);
-//    printf("top: %d\n", x);
-//
-//    pop(S, x);
-//    printf("x: %d", x);
-//    printfStack(S);
-//
-//    x = getTop(S);
-//    printf("top: %d", x);
 
     // 链栈
-//    int x = 0;
 //    LinkedStack S;
 //    init(S);
-//    printfStack(S);
-//    push(S, 3);
-//    push(S, 56);
-//    push(S, 514);
-//    push(S, 114);
-//    printfStack(S);
-//
-//    pop(S, x);
-//    printf("pop: %d\n", x);
-//    pop(S, x);
-//    printf("pop: %d\n", x);
-//
-//    printfStack(S);
 
     // 循环队列
-//    int x=0;
 //    CQueue Q;
 //    init(Q);
-//    printfQueue(Q);
-//    inputQueue(Q, 2);
-//    inputQueue(Q, 5);
-//    inputQueue(Q, 9);
-//    inputQueue(Q, 5);
-//    inputQueue(Q, 9);
-//
-//    printfQueue(Q);
-//    outputQueue(Q, x);
-//    outputQueue(Q, x);
-//    outputQueue(Q, x);
-//    printfQueue(Q);
-//    int y = -1;
-//    getHead(Q, y);
-//    printf("top: %d", y);
 
     // 链式队列
-//    int x = -1;
 //    LQueue Q;
 //    init(Q);
-//    printfQueue(Q);
-//    inputQueue(Q, 514);
-//    inputQueue(Q, 114);
-//    inputQueue(Q, 56);
-//    inputQueue(Q, 14);
-//    printfQueue(Q);
-//    x = getHead(Q);
-//    printf("head: %d", x);
-//    outputQueue(Q, x);
-//    outputQueue(Q, x);
-//    printfQueue(Q);
-//    x = getHead(Q);
-//    printf("head: %d", x);
+
 }

@@ -24,4 +24,8 @@ add_executable(
         queue/circular-queue/CircularQueue.h
         queue/linked-queue/LinkedQueue.cpp
         queue/linked-queue/LinkedQueue.h
+        instance/brackets-check/BracketsCheck.cpp
+        instance/brackets-check/BracketsCheck.h
+        utils/Utils.cpp
+        utils/Utils.h
 )
