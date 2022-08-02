@@ -5,7 +5,7 @@
  * [instance]
  * 括号匹配
  */
-#include "instance/brackets-check/BracketsCheck.h"
+//#include "instance/brackets-check/BracketsCheck.h"
 
 /*
  * 顺序表
@@ -52,42 +52,15 @@
  */
 //#include "queue/linked-queue/LinkedQueue.h"
 
+/*
+ * 顺序串
+ */
+#include "string/seqstring/SeqString.h"
+
 int main() {
-    // 括号匹配
-    char brackets[4] = "()(";
-    formatBool(check(brackets, sizeof(brackets) - 1));
-    return 0;
-
-    // 顺序表
-//    SeqList L;
-//    init(L);
-
-    // 单链表
-//    LinkedList L;
-//    init(L);
-
-    //双链表
-//    DLinkedList L;
-//    init(L);
-
-    // 静态链表
-//    SLinkedList L;
-//    init(L);
-
-    // 顺序栈
-//    SeqStack S;
-//    fullStack(S, 5);
-
-    // 链栈
-//    LinkedStack S;
-//    init(S);
-
-    // 循环队列
-//    CQueue Q;
-//    init(Q);
-
-    // 链式队列
-//    LQueue Q;
-//    init(Q);
+    SString S;
+    SString T;
+    init(S);
+    init(T);
 
 }
