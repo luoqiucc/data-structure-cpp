@@ -55,12 +55,13 @@
 /*
  * 顺序串
  */
-#include "string/seqstring/SeqString.h"
+//#include "string/seqstring/SeqString.h"
 
 int main() {
-    SString S;
-    SString T;
-    init(S);
-    init(T);
-
+//    SString s, t;
+//    init(s);
+//    init(t);
+//
+//    printf("%s, %d\n", s.ch, s.length);
+//    printf("%s, %d\n", t.ch, t.length);
 }

@@ -30,4 +30,6 @@ add_executable(
         utils/Utils.h
         string/seqstring/SeqString.cpp
         string/seqstring/SeqString.h
-        string/linked-string/LinkedString.cpp string/linked-string/LinkedString.h)
+        string/linked-string/LinkedString.cpp
+        string/linked-string/LinkedString.h
+)
