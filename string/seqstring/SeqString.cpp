@@ -12,7 +12,7 @@ bool init(SString &S) {
 
 /*
  * ! 在代码的具体实现中我为了方便将strlen()的返回值直接返回给了一个int类型的变量，这里会有一个数据
- *   类型变窄的问题，实际返回值的大小有超过int型变量最大表示范围的可能。实际开发慎用
+ *   类型变窄的问题，实际返回值的大小有超过int型变量最大表示范围的可能。
  *   Clang-Tidy: Narrowing conversion from 'size_t' (aka 'unsigned long long')
  *   to signed type 'int' is implementation-defined
  */

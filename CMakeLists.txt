@@ -32,4 +32,6 @@ add_executable(
         string/seqstring/SeqString.h
         string/linked-string/LinkedString.cpp
         string/linked-string/LinkedString.h
+        instance/kmp/KMP.cpp
+        instance/kmp/KMP.h
 )
