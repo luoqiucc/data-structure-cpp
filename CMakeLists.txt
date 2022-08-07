@@ -34,4 +34,8 @@ add_executable(
         string/linked-string/LinkedString.h
         instance/kmp/KMP.cpp
         instance/kmp/KMP.h
+        tree/seqbinarytree/SeqBinarytree.cpp
+        tree/seqbinarytree/SeqBinarytree.h
+        tree/linked-binarytree/LinkedBinarytree.cpp
+        tree/linked-binarytree/LinkedBinarytree.h
 )
