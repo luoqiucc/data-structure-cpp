@@ -61,5 +61,6 @@ bool check(char str[], int length) {
             }
         }
     }
+
     return isEmpty(S);
 }

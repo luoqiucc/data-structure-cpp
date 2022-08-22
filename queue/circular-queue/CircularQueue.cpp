@@ -33,6 +33,7 @@ bool inputQueue(CQueue &Q, int e) {
 
     Q.data[Q.rear] = e;
     Q.rear = (Q.rear + 1) % MAX_SIZE;
+
     return true;
 }
 
@@ -43,6 +44,7 @@ bool outputQueue(CQueue &Q, int &e) {
 
     e = Q.data[Q.front];
     Q.front = (Q.front + 1) % MAX_SIZE;
+
     return true;
 }
 
@@ -52,5 +54,6 @@ bool getHead(CQueue &Q, int &e) {
     }
 
     e = Q.data[Q.front];
+
     return true;
 }
