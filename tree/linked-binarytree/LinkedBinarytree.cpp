@@ -4,6 +4,9 @@
 
 #include "LinkedBinarytree.h"
 
-bool init(LBiTree &LT){
-
+bool init(LBiTree &LT, int e) {
+    LT->data = e;
+    LT->LChild = nullptr;
+    LT->RChild = nullptr;
+    return true;
 }
