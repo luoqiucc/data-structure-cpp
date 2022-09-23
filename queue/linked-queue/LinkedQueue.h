@@ -1,6 +1,5 @@
 /*
  * 链式队列
- * Created by chokeberry on 2022/7/28.
  */
 
 #include <iostream>

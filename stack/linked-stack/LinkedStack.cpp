@@ -1,7 +1,6 @@
 /*
  * 链栈
  * no-head
- * Created by chokeberry on 2022/7/26.
  */
 
 #include "LinkedStack.h"

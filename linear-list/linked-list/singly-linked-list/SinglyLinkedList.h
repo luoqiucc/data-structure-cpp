@@ -1,7 +1,6 @@
 /*
  * 单链表
  * no_head 表示无头结点，如果没写则默认适用于有头节点链表的操作
- * Created by chokeberry on 2022/5/2.
  */
 #include <iostream>
 

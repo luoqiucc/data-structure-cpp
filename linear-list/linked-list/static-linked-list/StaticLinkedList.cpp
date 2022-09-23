@@ -1,6 +1,5 @@
 /*
  * 静态链表
- * Created by chokeberry on 2022/7/25.
  */
 
 #include "StaticLinkedList.h"
