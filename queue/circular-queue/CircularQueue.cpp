@@ -1,6 +1,5 @@
 /*
  * 循环队列
- * Created by chokeberry on 2022/7/27.
  */
 
 #include "CircularQueue.h"

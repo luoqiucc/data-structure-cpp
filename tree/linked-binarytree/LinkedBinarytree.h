@@ -1,6 +1,5 @@
 /*
  * 二叉树的链式存储
- * Created by chokeberry on 2022/8/7.
  */
 #include <iostream>
 
@@ -12,4 +11,7 @@ typedef struct LBiTNode {
     struct LBiTNode *LChild, *RChild;
 } LBiTNode, *LBiTree;
 
-
+/*
+ * 初始化一个二叉树
+ */
+bool init(LBiTree &LT);

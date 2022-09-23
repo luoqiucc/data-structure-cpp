@@ -4,7 +4,6 @@
  *   用打印函数例如printf()这些是会无法打印出串中的内容，长度信息正常打印。
  *
  * 顺序串
- * Created by chokeberry on 2022/8/2.
  */
 #include <iostream>
 #include <cstring>

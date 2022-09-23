@@ -1,6 +1,5 @@
 /*
  * 循环链表
- * Created by chokeberry on 2022/7/24.
  */
 
 #include "CircularLinkedList.h"

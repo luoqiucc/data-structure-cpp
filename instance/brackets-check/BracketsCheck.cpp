@@ -1,7 +1,6 @@
 /*
  * 括号匹配
  * 使用栈
- * Created by chokeberry on 2022/7/30.
  */
 
 #include "BracketsCheck.h"

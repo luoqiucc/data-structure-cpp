@@ -1,6 +1,5 @@
 /*
  * 顺序栈
- * Created by chokeberry on 2022/7/26.
  */
 
 #include "SeqStack.h"
