@@ -22,3 +22,8 @@ bool init(LBiTree &LT, int e);
  * ! 不考虑元素具体位置，默认在最后添加
  */
 bool addNode(LBiTree &LT, int e);
+
+/*
+ * 先序遍历
+ */
+void preOrder(LBiTree T);

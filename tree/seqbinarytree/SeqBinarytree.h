@@ -16,7 +16,7 @@ typedef struct SeqBiTNode {
 /*
  * st[0]舍弃
  */
-SeqBiTNode st[MAX_SIZE];
+SeqBiTNode ST[MAX_SIZE];
 
 
 
