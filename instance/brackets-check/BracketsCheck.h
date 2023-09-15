@@ -43,5 +43,3 @@ bool push(CSeqStack &S, char e);
  * length 表示这串内容的长度
  */
 bool check(char str[], int length);
-
-

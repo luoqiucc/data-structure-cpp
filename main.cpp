@@ -58,5 +58,6 @@
 //#include "string/seqstring/SeqString.h"
 
 int main() {
-
+    std::cout << "== DATA STRUCTURE [C++] ==" << std::endl;
+    return 0;
 }
